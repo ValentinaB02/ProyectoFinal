@@ -1,10 +1,10 @@
 
 #include <Servo.h>
-#include "Talkie.h"             //This header file is used to provied different words for the circuit
-#include "Vocab_US_Large.h"     //This header file is used to give alerts 
-#include "Vocab_Special.h"
+//#include "Talkie.h"             //This header file is used to provied different words for the circuit
+//#include "Vocab_US_Large.h"     //This header file is used to give alerts 
+//#include "Vocab_Special.h"
 
-Talkie voice;
+//Talkie voice;
 Servo myservo;
 
 int servoPin = 9;
@@ -44,10 +44,10 @@ void loop() {
     digitalWrite(led, LOW);
     digitalWrite(buzzer, LOW);
     delay(200);
-    voice.say(spPAUSE1);          //Takes short pause while repaeting the alert message
-    voice.say(sp2_ALERT);
-    voice.say(spPAUSE2);
-    voice.say(sp2_ALERT);
+//    voice.say(spPAUSE1);          //Takes short pause while repaeting the alert message
+//    voice.say(sp2_ALERT);
+//    voice.say(spPAUSE2);
+//    voice.say(sp2_ALERT);
   }
   else {
     digitalWrite(led, LOW);
